@@ -1,0 +1,179 @@
+---
+layout: archive
+---
+
+<div class="portfolio-page portfolio-page--home">
+  <section class="portfolio-hero fade-in">
+    <div class="portfolio-hero__card">
+      <div class="portfolio-hero__copy">
+        <p class="portfolio-eyebrow portfolio-eyebrow--hero">Biomedical Engineering | Neurotechnology | AI</p>
+        <h1 class="portfolio-title">Hello,<br>I'm Brynn<br><span class="portfolio-title__line">Harris-Shanks.</span></h1>
+        <div class="portfolio-copy">
+          {{ site.description }}
+        </div>
+        <div class="portfolio-actions">
+          <a href="#projects" class="portfolio-button">View Projects</a>
+          <a href="#contact" class="portfolio-button portfolio-button--ghost">Get In Touch</a>
+        </div>
+      </div>
+      <div class="portfolio-hero__visual portfolio-hero__visual--portrait">
+        <div class="hero-shape"></div>
+        <div class="portrait-frame">
+          <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio-section fade-in" id="about">
+    <div class="section-heading">
+      <p class="portfolio-eyebrow">About Me</p>
+      <h2>Building human-centered technology for research and health.</h2>
+    </div>
+    <div class="about-grid">
+      <article class="about-card">
+        <div class="portfolio-copy">
+          {{ site.author.bio | markdownify }}
+          <p>My interests span neurotechnology, digital health, machine learning, and the practical design of tools that help people understand complex data.</p>
+        </div>
+        <div class="portfolio-actions">
+          <a href="{{ '/about/' | relative_url }}" class="portfolio-button">More About Me</a>
+        </div>
+      </article>
+      <aside class="about-aside">
+        {% assign current_item = site.data.experience | where: "current", true | first %}
+        {% if current_item %}
+        <article class="mini-panel">
+          <p class="mini-panel__label">Current Focus</p>
+          <h3>{{ current_item.title }}</h3>
+          <p>{{ current_item.organization }}</p>
+          <span>{{ current_item.location }}</span>
+        </article>
+        {% endif %}
+
+        {% if site.data.skills %}
+        <article class="mini-panel">
+          <p class="mini-panel__label">Core Strengths</p>
+          <div class="mini-tags">
+            {% for skill_category in site.data.skills limit: 2 %}
+              {% for skill in skill_category.items limit: 3 %}
+              <span class="mini-tag">{{ skill.name }}</span>
+              {% endfor %}
+            {% endfor %}
+          </div>
+        </article>
+        {% endif %}
+      </aside>
+    </div>
+  </section>
+
+  {% if site.data.working-on %}
+  <section class="portfolio-section fade-in">
+    <div class="section-heading">
+      <p class="portfolio-eyebrow">Right Now</p>
+      <h2>What I'm currently working on</h2>
+    </div>
+    <div class="working-on-grid">
+      {% for item in site.data.working-on %}
+      {% if item.project_link and item.project_link != "" %}
+      <a href="{{ item.project_link | relative_url }}" class="working-on-card-link">
+      {% endif %}
+      <article class="working-on-card {% if item.project_link and item.project_link != '' %}clickable{% endif %}">
+        <div class="working-on-header">
+          <div class="working-on-icon" style="background: {{ item.color }}22; color: {{ item.color }};">
+            <i class="{{ item.icon }}"></i>
+          </div>
+          <div class="working-on-title-group">
+            <h3 class="working-on-title">{{ item.title }}</h3>
+            <span class="working-on-category">{{ item.category }}</span>
+          </div>
+        </div>
+        <p class="working-on-description">{{ item.description }}</p>
+        <div class="working-on-progress">
+          <div class="progress-bar">
+            <div class="progress-fill" style="width: {{ item.progress }}%; background: {{ item.color }};"></div>
+          </div>
+          <div class="progress-info">
+            <span class="progress-percent">{{ item.progress }}%</span>
+            <span class="working-on-status status-{{ item.status | downcase | replace: ' ', '-' }}">{{ item.status }}</span>
+          </div>
+        </div>
+      </article>
+      {% if item.project_link and item.project_link != "" %}
+      </a>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+  {% endif %}
+
+  <section class="portfolio-section fade-in" id="projects">
+    <div class="section-heading">
+      <p class="portfolio-eyebrow">Projects</p>
+      <h2>Selected work</h2>
+    </div>
+    <div class="featured-projects">
+      {% assign featured_projects = site.projects | sort: "date" | reverse %}
+      {% for project in featured_projects %}
+      <article class="featured-project-card {% cycle '', 'featured-project-card--reverse' %}">
+        {% if project.image %}
+        <a href="{{ project.url | relative_url }}" class="featured-project-card__media">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+        </a>
+        {% endif %}
+        <div class="featured-project-card__content">
+          {% if project.category %}
+          <p class="portfolio-eyebrow">{{ project.category }}</p>
+          {% endif %}
+          <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+          <p>{{ project.description }}</p>
+          {% if project.technologies %}
+          <div class="project-technologies">
+            {% for tech in project.technologies limit: 4 %}
+            <span class="tech-badge">{{ tech }}</span>
+            {% endfor %}
+          </div>
+          {% endif %}
+          <div class="portfolio-actions">
+            <a href="{{ project.url | relative_url }}" class="portfolio-button">Read More</a>
+            {% assign first_valid_label = nil %}
+            {% assign first_valid_url = nil %}
+            {% if project.links %}
+              {% for link in project.links %}
+                {% if first_valid_url == nil and link.url and link.url != '#' %}
+                  {% assign first_valid_label = link.label %}
+                  {% assign first_valid_url = link.url %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+            {% if first_valid_url %}
+            <a href="{{ first_valid_url }}" class="portfolio-button portfolio-button--ghost" target="_blank" rel="noopener noreferrer">{{ first_valid_label }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+    <div class="section-footer">
+      <a href="{{ '/projects/' | relative_url }}" class="portfolio-button portfolio-button--ghost">Browse All Projects</a>
+    </div>
+  </section>
+
+  <section class="portfolio-section fade-in" id="contact">
+    <div class="contact-panel contact-panel--footer">
+      <div>
+        <p class="portfolio-eyebrow">Contact</p>
+        <h2>Let's connect.</h2>
+        <p>Whether it's a research collaboration, a portfolio review, or a conversation about biomedical engineering and AI, I'd love to hear from you.</p>
+      </div>
+      <div class="contact-actions">
+        <a href="mailto:{{ site.email }}" class="portfolio-button">Email Me</a>
+        {% for link in site.author.links %}
+        <a href="{{ link.url }}" class="portfolio-icon-link" target="_blank" rel="noopener noreferrer" aria-label="{{ link.label }}">
+          <i class="{{ link.icon }}"></i>
+        </a>
+        {% endfor %}
+      </div>
+    </div>
+  </section>
+</div>

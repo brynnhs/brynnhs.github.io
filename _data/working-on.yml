@@ -1,0 +1,29 @@
+- title: "Mouse Memory Analysis"
+  category: "Research"
+  description: "Developing my master's thesis project around neural and behavioural data analysis for mouse memory experiments."
+  status: "In Progress"
+  progress: 60
+  icon: "fas fa-graduation-cap"
+  color: "#0066cc"
+  updated: "2025-01-15"
+  project_link: "/projects/?expand=BioFabLab"
+
+- title: "Learning French"
+  category: "Personal Development"
+  description: "Improving my French language skills through daily practice and conversation."
+  status: "Active"
+  progress: 40
+  icon: "fas fa-language"
+  color: "#00d4ff"
+  updated: "2025-01-20"
+  project_link: "/projects/?expand=LearningFrench"
+
+- title: "AI Ethics Course"
+  category: "Education"
+  description: "Taking an online course on AI Ethics to better understand responsible AI development."
+  status: "In Progress"
+  progress: 30
+  icon: "fas fa-brain"
+  color: "#6c757d"
+  updated: "2025-01-18"
+  project_link: "/projects/?expand=AIEthicsCourse"

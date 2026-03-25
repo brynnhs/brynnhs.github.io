@@ -1,0 +1,56 @@
+---
+layout: single
+---
+
+<article class="project-detail">
+  <section class="project-detail__hero fade-in">
+    <div class="project-detail__copy">
+      {% if page.category %}
+      <p class="portfolio-eyebrow">{{ page.category }}</p>
+      {% endif %}
+      <h1 class="project-detail__title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="project-detail__description">{{ page.description }}</p>
+      {% endif %}
+
+      {% if page.technologies %}
+      <div class="project-detail__meta">
+        {% for tech in page.technologies %}
+        <span class="tech-badge">{{ tech }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+
+      {% assign has_valid_links = false %}
+      {% if page.links %}
+        {% for link in page.links %}
+          {% if link.url and link.url != '#' %}
+            {% assign has_valid_links = true %}
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+
+      {% if has_valid_links %}
+      <div class="project-links project-links--detail">
+        {% for link in page.links %}
+        {% if link.url and link.url != '#' %}
+        <a href="{{ link.url }}" class="project-link" target="_blank" rel="noopener noreferrer">
+          <i class="{{ link.icon | default: 'fas fa-external-link-alt' }}"></i> {{ link.label }}
+        </a>
+        {% endif %}
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+
+    {% if page.image %}
+    <div class="project-detail__visual">
+      <img src="{{ page.image | relative_url }}" alt="{{ page.title }}">
+    </div>
+    {% endif %}
+  </section>
+
+  <section class="project-detail__body fade-in">
+    {{ content }}
+  </section>
+</article>
