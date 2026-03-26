@@ -28,13 +28,13 @@ layout: archive
   <section class="portfolio-section fade-in" id="about">
     <div class="section-heading">
       <p class="portfolio-eyebrow">About Me</p>
-      <h2>Building human-centered technology for research and health.</h2>
+      <h2>Applied neuroscience for research, rehabilitation, and digital health.</h2>
     </div>
     <div class="about-grid">
       <article class="about-card">
         <div class="portfolio-copy">
           {{ site.author.bio | markdownify }}
-          <p>My interests span neurotechnology, digital health, machine learning, and the practical design of tools that help people understand complex data.</p>
+          <p>My experience spans EEG preprocessing, deep learning for functional ultrasound forecasting, VR-based neuromodulation experiments, and clinically grounded neurotechnology work.</p>
         </div>
         <div class="portfolio-actions">
           <a href="{{ '/about/' | relative_url }}" class="portfolio-button">More About Me</a>
@@ -58,7 +58,7 @@ layout: archive
             {% for skill_category in site.data.skills limit: 2 %}
               {% for skill in skill_category.items limit: 3 %}
               <span class="mini-tag">{{ skill.name }}</span>
-              {% endfor %}
+            {% endfor %}
             {% endfor %}
           </div>
         </article>

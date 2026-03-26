@@ -18,9 +18,9 @@ email: brynn.hs@dal.ca
 url: "https://brynnhs.github.io"
 baseurl: ""
 description: >- # this means to ignore newlines until "baseurl:"
-  Portfolio of Brynn Harris-Shanks - Master's student in Biomedical Engineering 
-  focusing on Neurotechnology, AI, and Digital Health. Explore projects, research, 
-  and insights in biomedical engineering and data science.
+  Portfolio of Brynn Harris-Shanks - applied neuroscientist and Biomedical
+  Engineering master's student focused on neurotechnology, AI, and digital
+  health.
 twitter_username: 
 github_username: brynnhs
 minimal_mistakes_skin: default
@@ -68,7 +68,7 @@ plugins:
 author:
   name   : "Brynn Harris-Shanks"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "Master's student in Biomedical Engineering with a focus in Neurotechnology, AI, and Digital Health at [ESPCI - PSL University](https://st4health.espci.fr/?lang=en)."
+  bio    : "Applied neuroscientist and Master's student in Biomedical Engineering at [ESPCI - PSL University](https://st4health.espci.fr/?lang=en), working across neurotechnology, AI, and digital health."
   location: "Paris, France"
   school: "ESPCI - PSL University"
   links:

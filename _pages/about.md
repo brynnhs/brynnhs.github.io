@@ -10,10 +10,10 @@ classes: wide portfolio-layout
     <div class="portfolio-hero__card">
       <div class="portfolio-hero__copy">
         <p class="portfolio-eyebrow">About Me</p>
-        <h1 class="portfolio-title">Designing thoughtful tools for neuroscience, health, and data-driven research.</h1>
+        <h1 class="portfolio-title">Applied neuroscience across biomedical engineering, AI, and digital health.</h1>
         <div class="portfolio-copy">
           {{ site.author.bio | markdownify }}
-          <p>My work lives at the intersection of biomedical engineering, AI, and digital health. I care about building things that are rigorous, useful, and easy for people to trust.</p>
+          <p>My work spans EEG preprocessing, deep learning for functional ultrasound forecasting, VR-based neuromodulation experiments, and clinical operations for neurotechnology studies.</p>
         </div>
       </div>
       <div class="portfolio-hero__visual portfolio-hero__visual--portrait">
@@ -85,7 +85,7 @@ classes: wide portfolio-layout
       <div>
         <p class="portfolio-eyebrow">Contact</p>
         <h2>Let's build something meaningful.</h2>
-        <p>I'm always open to research collaborations, technical conversations, and opportunities in biomedical engineering, AI, and neurotechnology.</p>
+        <p>I'm always open to research collaborations, technical conversations, and opportunities in biomedical engineering, AI, neurotechnology, and digital health.</p>
       </div>
       <div class="contact-actions">
         <a href="mailto:{{ site.email }}" class="portfolio-button">Email Me</a>

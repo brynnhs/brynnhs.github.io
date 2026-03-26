@@ -1,17 +1,62 @@
+- type: "Experience"
+  title: "Deep Learning Intern"
+  organization: "Physics for Medicine Lab"
+  location: "Paris, France"
+  start_date: "Jan 2026"
+  end_date: "Present"
+  description: "Developing deep learning models to predict future functional ultrasound frames from historical brain activity for real-time neural state forecasting."
+  current: true
+
 - type: "Education"
   title: "Master's in Biomedical Engineering"
   organization: "ESPCI - PSL University"
   location: "Paris, France"
-  start_date: "2023"
+  start_date: "Sept 2024"
   end_date: "Present"
-  description: "Focus on Neurotechnology, AI, and Digital Health"
+  description: "AI & Digital Health track with a focus on neurotechnology, machine learning, and translational health tools."
   current: true
 
+- type: "Experience"
+  title: "Neuromodulation Intern"
+  organization: "Clarity Technologies"
+  location: "Paris, France"
+  start_date: "Apr 2025"
+  end_date: "Aug 2025"
+  description: "Built EEG acquisition and analysis pipelines for a VR-based gamma neuromodulation platform and designed closed-loop Unity experiments."
+  current: false
+
+- type: "Experience"
+  title: "Research Assistant"
+  organization: "Neuro-Cognitive Imaging Lab"
+  location: "Halifax, Nova Scotia"
+  start_date: "Sept 2021"
+  end_date: "Aug 2024"
+  description: "Completed an honours thesis on non-invasive BCI optimization and contributed to EEG preprocessing, classification, and statistical analysis pipelines."
+  current: false
+
+- type: "Experience"
+  title: "Junior Data Scientist & Clinical Ops Manager"
+  organization: "Axem Neurotech"
+  location: "Halifax, Nova Scotia"
+  start_date: "Nov 2023"
+  end_date: "Feb 2024"
+  description: "Designed a Unity-based computer vision rehabilitation system and managed fNIRS protocols and clinical data collection."
+  current: false
+
+- type: "Experience"
+  title: "BCI Specialist"
+  organization: "SURGE Innovation Sandbox"
+  location: "Halifax, Nova Scotia"
+  start_date: "Oct 2023"
+  end_date: "Aug 2024"
+  description: "Led weekly EEG and machine learning workshops and built a hands-on brain-computer interface curriculum."
+  current: false
+
 - type: "Education"
-  title: "Bachelor's Degree"
+  title: "BSc with First Class Honours"
   organization: "Dalhousie University"
-  location: "Halifax, Canada"
-  start_date: "2019"
-  end_date: "2023"
-  description: "Biomedical Engineering"
+  location: "Halifax, Nova Scotia"
+  start_date: "Sept 2019"
+  end_date: "June 2023"
+  description: "Neuroscience."
   current: false
