@@ -12,9 +12,9 @@
   --portfolio-ink: #18261c;
   --portfolio-muted: #5f7064;
   --portfolio-border: rgba(24, 38, 28, 0.08);
-  --portfolio-accent: #99d98c;
-  --portfolio-accent-deep: #4f8f63;
-  --portfolio-accent-soft: #d8f3dc;
+  --portfolio-accent: #b7e4c7;
+  --portfolio-accent-deep: #6fa57f;
+  --portfolio-accent-soft: #e2f3e6;
   --portfolio-shadow: 0 24px 60px rgba(31, 58, 38, 0.11);
   --portfolio-shadow-soft: 0 16px 34px rgba(31, 58, 38, 0.08);
   --portfolio-radius: 2rem;
@@ -73,7 +73,7 @@ html {
 
 body {
   background:
-    radial-gradient(circle at top right, rgba(153, 217, 140, 0.34), transparent 28rem),
+    radial-gradient(circle at top right, rgba(183, 228, 199, 0.34), transparent 28rem),
     linear-gradient(180deg, #f8fdf6 0%, #eff8ee 100%);
   color: var(--portfolio-ink);
   font-family: var(--portfolio-sans);
@@ -81,7 +81,7 @@ body {
 }
 
 body::before {
-  background: linear-gradient(140deg, rgba(153, 217, 140, 0.1), rgba(153, 217, 140, 0));
+  background: linear-gradient(140deg, rgba(183, 228, 199, 0.1), rgba(183, 228, 199, 0));
   border-radius: 0 0 50% 50%;
   content: "";
   height: 28rem;
@@ -260,7 +260,7 @@ a {
   background: var(--portfolio-accent);
   border: 1px solid transparent;
   border-radius: 999px;
-  box-shadow: 0 10px 22px rgba(153, 217, 140, 0.34);
+  box-shadow: 0 10px 22px rgba(183, 228, 199, 0.34);
   color: var(--portfolio-ink) !important;
   display: inline-flex;
   font-size: 0.92rem;
@@ -275,7 +275,7 @@ a {
 
 .portfolio-button:hover {
   background: var(--portfolio-accent-deep);
-  box-shadow: 0 16px 26px rgba(79, 143, 99, 0.24);
+  box-shadow: 0 16px 26px rgba(111, 165, 127, 0.24);
   color: white;
   transform: translateY(-2px);
 }
@@ -340,7 +340,7 @@ a {
 }
 
 .portfolio-hero__card::after {
-  background: linear-gradient(135deg, rgba(153, 217, 140, 0.12), rgba(153, 217, 140, 0));
+  background: linear-gradient(135deg, rgba(183, 228, 199, 0.12), rgba(183, 228, 199, 0));
   border-radius: 50%;
   content: "";
   height: 18rem;
@@ -542,7 +542,7 @@ a {
 .featured-project-card:hover,
 .project-card:hover,
 .skill-category:hover {
-  border-color: rgba(153, 217, 140, 0.5);
+  border-color: rgba(183, 228, 199, 0.5);
   box-shadow: 0 28px 54px rgba(31, 58, 38, 0.14);
   transform: translateY(-4px);
 }
@@ -614,8 +614,8 @@ a {
 
 .status-in-progress,
 .status-active {
-  background: rgba(153, 217, 140, 0.2);
-  color: #3c6f4f;
+  background: rgba(183, 228, 199, 0.24);
+  color: #4f7f5e;
 }
 
 .status-completed {
@@ -696,7 +696,7 @@ a {
 }
 
 .timeline::before {
-  background: linear-gradient(180deg, var(--portfolio-accent), rgba(153, 217, 140, 0));
+  background: linear-gradient(180deg, var(--portfolio-accent), rgba(183, 228, 199, 0));
   border-radius: 999px;
   content: "";
   left: 0.28rem;
@@ -788,7 +788,7 @@ a {
 }
 
 .contact-panel::after {
-  background: linear-gradient(135deg, rgba(153, 217, 140, 0.22), rgba(153, 217, 140, 0));
+  background: linear-gradient(135deg, rgba(183, 228, 199, 0.22), rgba(183, 228, 199, 0));
   border-radius: 50%;
   content: "";
   height: 14rem;
