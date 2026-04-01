@@ -10,7 +10,6 @@ classes: wide portfolio-layout
     <div class="portfolio-hero__card">
       <div class="portfolio-hero__copy">
         <p class="portfolio-eyebrow">About Me</p>
-        <h1 class="portfolio-title">Applied neuroscience across biomedical engineering, AI, and digital health.</h1>
         <div class="portfolio-copy">
           {{ site.author.bio | markdownify }}
           <p>My work spans EEG preprocessing, deep learning for functional ultrasound forecasting, VR-based neuromodulation experiments, and clinical operations for neurotechnology studies.</p>
@@ -28,7 +27,6 @@ classes: wide portfolio-layout
   <section class="portfolio-section fade-in">
     <div class="section-heading">
       <p class="portfolio-eyebrow">Timeline</p>
-      <h2>Education & Experience</h2>
     </div>
     <div class="timeline">
       {% for item in site.data.experience %}
@@ -60,7 +58,6 @@ classes: wide portfolio-layout
   <section class="portfolio-section fade-in">
     <div class="section-heading">
       <p class="portfolio-eyebrow">Skills</p>
-      <h2>Tools and areas I work across</h2>
     </div>
     <div class="skills-grid skills-grid--about">
       {% for skill_category in site.data.skills %}
@@ -84,7 +81,6 @@ classes: wide portfolio-layout
     <div class="contact-panel">
       <div>
         <p class="portfolio-eyebrow">Contact</p>
-        <h2>Let's build something meaningful.</h2>
         <p>I'm always open to research collaborations, technical conversations, and opportunities in biomedical engineering, AI, neurotechnology, and digital health.</p>
       </div>
       <div class="contact-actions">

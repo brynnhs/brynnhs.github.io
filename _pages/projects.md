@@ -11,7 +11,6 @@ classes: wide portfolio-layout
     <div class="portfolio-hero__card">
       <div class="portfolio-hero__copy">
         <p class="portfolio-eyebrow">Projects</p>
-        <h1 class="portfolio-title">Selected work across research, data science, and personal learning.</h1>
         <p class="portfolio-copy">A mix of technical builds, active learning projects, and research-driven work. Each project page includes more context, tools used, and relevant links where available.</p>
       </div>
       <div class="portfolio-hero__visual">
