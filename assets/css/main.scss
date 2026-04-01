@@ -20,8 +20,51 @@
   --portfolio-radius: 2rem;
   --portfolio-radius-sm: 1.2rem;
   --portfolio-max: 1140px;
-  --portfolio-serif: "Cormorant Garamond", "Times New Roman", serif;
+  --portfolio-serif: "Manrope", "Segoe UI", sans-serif;
   --portfolio-sans: "Manrope", "Segoe UI", sans-serif;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figcaption,
+.page__hero-caption,
+.archive__item-caption,
+.masthead__inner-wrap,
+.breadcrumbs,
+.pagination,
+.pagination li a,
+.pagination--pager,
+.nav__title,
+.nav__sub-title,
+.toc,
+.page__footer-copyright,
+.page__footer-follow li,
+.skip-link,
+.page__lead,
+.page__content dt,
+.page__content dd,
+.page__meta,
+.comment__date,
+.archive__item-title,
+.sidebar h2,
+.sidebar h3,
+.sidebar h4,
+.sidebar h5,
+.sidebar h6,
+.sidebar p,
+.sidebar li,
+.sidebar .author__name,
+.author__urls-wrapper {
+  font-family: var(--portfolio-sans);
 }
 
 html {
