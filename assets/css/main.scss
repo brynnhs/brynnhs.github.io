@@ -317,10 +317,10 @@ body::after {
 }
 
 .neo-project-card__body {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(160px, 220px);
+  display: flex;
   gap: 1.5rem;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .neo-project-card__meta {
@@ -542,6 +542,9 @@ body::after {
   overflow: hidden;
   background: rgba(20, 11, 38, 0.06);
   box-shadow: 0 12px 40px rgba(10, 5, 25, 0.18);
+  width: 220px;
+  height: 160px;
+  flex: 0 0 auto;
 }
 
 .neo-project-card__thumb img {
@@ -555,6 +558,11 @@ body::after {
   .neo-hero__grid {
     grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
   }
+
+  .neo-project-card__body {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 900px) {
@@ -562,10 +570,6 @@ body::after {
   .neo-hero__cta {
     flex-direction: column;
     align-items: flex-start;
-  }
-
-  .neo-project-card__body {
-    grid-template-columns: 1fr;
   }
 
   .neo-contact {
