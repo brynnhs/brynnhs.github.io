@@ -6,7 +6,7 @@ layout: archive
   <section class="neo-hero fade-in">
     <div class="neo-hero__grid">
       <div class="neo-hero__copy">
-        <h1 class="neo-headline">Neurotechnology + AI engineer.</h1>
+        <h1 class="neo-headline">{{ site.author.bio | markdownify | strip_html | strip }}</h1>
         <div class="neo-hero__cta">
           <a href="{{ '/cv/' | relative_url }}" class="neo-link">View CV</a>
           <a href="#projects" class="neo-link neo-link--ghost">See selected work</a>
