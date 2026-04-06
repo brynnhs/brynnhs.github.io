@@ -28,39 +28,47 @@ layout: archive
         <p class="neo-label">Case Studies</p>
         <h2>Projects</h2>
       </div>
-      <a href="{{ '/projects/' | relative_url }}" class="neo-link">Browse all</a>
     </header>
     <div class="neo-projects">
       {% assign featured_projects = site.projects | sort: "date" | reverse %}
       {% for project in featured_projects %}
       <article class="neo-project-card">
-        <div class="neo-project-card__meta">
-          {% if project.category %}<span>{{ project.category }}</span>{% endif %}
-          {% if project.date %}<span>{{ project.date | date: "%Y" }}</span>{% endif %}
-        </div>
-        <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
-        <p>{{ project.description }}</p>
-        {% if project.technologies %}
-        <div class="neo-project-card__tags">
-          {% for tech in project.technologies limit: 4 %}
-          <span>{{ tech }}</span>
-          {% endfor %}
-        </div>
-        {% endif %}
-        <div class="neo-project-card__actions">
-          <a href="{{ project.url | relative_url }}" class="neo-link">Open project</a>
-          {% assign first_valid_label = nil %}
-          {% assign first_valid_url = nil %}
-          {% if project.links %}
-            {% for link in project.links %}
-              {% if first_valid_url == nil and link.url and link.url != '#' %}
-                {% assign first_valid_label = link.label %}
-                {% assign first_valid_url = link.url %}
+        <div class="neo-project-card__body">
+          <div>
+            <div class="neo-project-card__meta">
+              {% if project.category %}<span>{{ project.category }}</span>{% endif %}
+              {% if project.date %}<span>{{ project.date | date: "%Y" }}</span>{% endif %}
+            </div>
+            <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>
+            <p>{{ project.description }}</p>
+            {% if project.technologies %}
+            <div class="neo-project-card__tags">
+              {% for tech in project.technologies limit: 4 %}
+              <span>{{ tech }}</span>
+              {% endfor %}
+            </div>
+            {% endif %}
+            <div class="neo-project-card__actions">
+              <a href="{{ project.url | relative_url }}" class="neo-link">See more</a>
+              {% assign first_valid_label = nil %}
+              {% assign first_valid_url = nil %}
+              {% if project.links %}
+                {% for link in project.links %}
+                  {% if first_valid_url == nil and link.url and link.url != '#' %}
+                    {% assign first_valid_label = link.label %}
+                    {% assign first_valid_url = link.url %}
+                  {% endif %}
+                {% endfor %}
               {% endif %}
-            {% endfor %}
-          {% endif %}
-          {% if first_valid_url %}
-          <a href="{{ first_valid_url }}" class="neo-link neo-link--ghost" target="_blank" rel="noopener noreferrer">{{ first_valid_label }}</a>
+              {% if first_valid_url %}
+              <a href="{{ first_valid_url }}" class="neo-link neo-link--ghost" target="_blank" rel="noopener noreferrer">{{ first_valid_label }}</a>
+              {% endif %}
+            </div>
+          </div>
+          {% if project.image %}
+          <div class="neo-project-card__thumb">
+            <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          </div>
           {% endif %}
         </div>
       </article>

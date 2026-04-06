@@ -4,6 +4,7 @@ title: "Projects"
 permalink: /projects/
 author_profile: false
 classes: wide portfolio-layout
+published: false
 ---
 
 <div class="portfolio-page portfolio-page--projects fade-in">
