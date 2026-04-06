@@ -4,7 +4,7 @@
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}";
 @import "minimal-mistakes";
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap');
 
 :root {
   --neo-bg: #f8f5ff;
@@ -17,7 +17,7 @@
   --neo-accent-strong: #7f31de;
   --neo-shadow: 0 20px 60px rgba(12, 5, 21, 0.25);
   --neo-radius: 26px;
-  --neo-serif: 'Playfair Display', 'Times New Roman', serif;
+  --neo-serif: 'Space Grotesk', 'Manrope', 'Segoe UI', sans-serif;
   --neo-sans: 'Space Grotesk', 'Manrope', 'Segoe UI', sans-serif;
   --neo-max-width: 1180px;
 }
@@ -112,7 +112,9 @@ body::after {
 }
 
 .site-title,
-.greedy-nav .site-title {
+.site-title a,
+.greedy-nav .site-title,
+.greedy-nav .site-title a {
   font-family: var(--neo-sans);
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -169,8 +171,8 @@ body::after {
 }
 
 .neo-headline {
-  font-family: var(--neo-serif);
-  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-family: var(--neo-sans);
+  font-size: clamp(1.5rem, 3.6vw, 2.4rem);
   line-height: 1.2;
   margin: 0;
   max-width: 24ch;
@@ -254,7 +256,8 @@ body::after {
 
 .neo-portrait {
   position: relative;
-  width: min(210px, 60vw);
+  width: min(320px, 70vw);
+  max-width: 320px;
   margin-left: auto;
   align-self: center;
 }
@@ -272,8 +275,8 @@ body::after {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 26px 26px 90px 26px;
-  border: 5px solid rgba(255, 255, 255, 0.9);
+  border-radius: 32px;
+  border: 6px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--neo-shadow);
 }
 
