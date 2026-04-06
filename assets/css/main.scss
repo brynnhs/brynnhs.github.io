@@ -201,6 +201,18 @@ body::after {
   letter-spacing: 0.05em;
 }
 
+.tech-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(20, 11, 38, 0.12);
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .neo-link {
   color: var(--neo-ink);
   font-weight: 600;
@@ -446,6 +458,8 @@ body::after {
   gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   padding: clamp(2.2rem, 5vw, 3.6rem);
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .project-detail__copy {
@@ -467,7 +481,8 @@ body::after {
 .project-detail__meta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.5rem;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
 }
 
 .project-detail__visual img {
@@ -481,6 +496,8 @@ body::after {
   gap: 2rem;
   grid-template-columns: minmax(0, 2.4fr) minmax(240px, 1fr);
   align-items: start;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 .project-detail__body {
@@ -495,6 +512,12 @@ body::after {
 
 .project-detail__body > * + * {
   margin-top: 1.4rem;
+}
+
+.project-detail__body h2 {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(20, 11, 38, 0.08);
 }
 
 .project-detail__summary {
