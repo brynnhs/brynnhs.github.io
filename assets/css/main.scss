@@ -144,8 +144,8 @@ body::after {
 .neo-page {
   display: flex;
   flex-direction: column;
-  gap: 4.5rem;
-  padding: 2.5rem 0 6rem;
+  gap: 3rem;
+  padding: 2rem 0 4.5rem;
 }
 
 .neo-label {
@@ -297,7 +297,7 @@ body::after {
   border: 1px solid var(--neo-border);
   border-radius: var(--neo-radius);
   box-shadow: var(--neo-shadow);
-  padding: clamp(2rem, 5vw, 3rem);
+  padding: clamp(1.75rem, 4.5vw, 2.6rem);
 }
 
 .neo-section__header {
@@ -596,6 +596,18 @@ body::after {
   color: var(--neo-muted);
   margin-top: 0.8rem;
   text-align: center;
+}
+
+.page__footer {
+  background: transparent;
+  border-top: 1px solid rgba(20, 11, 38, 0.08);
+  margin-top: 2.5rem;
+  padding: 1.5rem 0 2rem;
+}
+
+.page__footer-follow,
+.page__footer-copyright {
+  color: var(--neo-muted);
 }
 
 @media (max-width: 900px) {

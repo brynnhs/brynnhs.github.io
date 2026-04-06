@@ -3,6 +3,8 @@ title: "Mouse Memory Analysis"
 date: 2025-03-24
 description: "A Dash application for visualizing and analyzing neural and behavioural data from mouse experiments."
 category: "Data Science"
+poster_image: "/assets/images/bfl_poster.jpg"
+poster_caption: "Overview poster displayed at BioFab Lab highlighting the end-to-end mouse memory analysis pipeline."
 technologies:
   - Python
   - Dash
@@ -27,10 +29,3 @@ Interactive dashboards make it easy to scrub through large photometry datasets, 
 <div class="project-impact">
   <p>This toolkit is actively used in photometry studies to interrogate memory formation and retrieval in mouse models. By pairing neural signals with behavioural annotations in one place, it shortens the feedback loop for hypotheses and accelerates translational neurotechnology work.</p>
 </div>
-
-## Poster Snapshot
-
-<figure class="project-poster-card">
-  <img src="{{ '/assets/images/bfl_poster.jpg' | relative_url }}" alt="Mouse Memory Analysis poster">
-  <figcaption>Overview poster displayed at BioFab Lab highlighting the end-to-end mouse memory analysis pipeline.</figcaption>
-</figure>
