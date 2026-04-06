@@ -113,9 +113,10 @@ body::after {
 
 .site-title,
 .greedy-nav .site-title {
-  font-family: var(--neo-serif);
-  font-weight: 600;
-  letter-spacing: -0.05em;
+  font-family: var(--neo-sans);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
   color: var(--neo-ink);
 }
 
@@ -163,15 +164,16 @@ body::after {
 .neo-hero__grid {
   display: grid;
   gap: 2.5rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: minmax(0, 1fr);
   align-items: center;
 }
 
 .neo-headline {
   font-family: var(--neo-serif);
-  font-size: clamp(2.2rem, 5vw, 3.3rem);
-  line-height: 1.05;
-  margin: 0.4rem 0 1.2rem;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  margin: 0;
+  max-width: 24ch;
 }
 
 .neo-hero__subhead {
@@ -230,6 +232,7 @@ body::after {
 .neo-hero__cta {
   display: flex;
   gap: 1.5rem;
+  padding-top: 1.2rem;
 }
 
 .neo-card {
@@ -251,8 +254,9 @@ body::after {
 
 .neo-portrait {
   position: relative;
-  width: min(260px, 70vw);
+  width: min(210px, 60vw);
   margin-left: auto;
+  align-self: center;
 }
 
 .neo-portrait__glow {
@@ -266,8 +270,10 @@ body::after {
 .neo-portrait img {
   position: relative;
   width: 100%;
-  border-radius: 30px 30px 120px 30px;
-  border: 6px solid rgba(255, 255, 255, 0.9);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 26px 26px 90px 26px;
+  border: 5px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--neo-shadow);
 }
 
@@ -519,6 +525,12 @@ body::after {
 .cv-skills li span {
   color: var(--neo-muted);
   margin-left: 0.4rem;
+}
+
+@media (min-width: 820px) {
+  .neo-hero__grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(0, 0.65fr);
+  }
 }
 
 @media (max-width: 900px) {
