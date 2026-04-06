@@ -1,7 +1,6 @@
 ---
 title: "Mouse Memory Analysis"
 date: 2025-03-24
-image: "/assets/images/thumbnail.png"
 description: "A Dash application for visualizing and analyzing neural and behavioural data from mouse experiments."
 category: "Data Science"
 technologies:
@@ -37,3 +36,7 @@ This project involves developing a comprehensive Dash application for visualizin
 ## Impact
 
 This tool has been used in ongoing research to better understand memory formation and retrieval processes in mouse models, contributing to advances in neurotechnology and cognitive research.
+
+## Poster Snapshot
+
+![BioFab Lab Poster]({{ '/assets/images/bfl_poster.jpg' | relative_url }})
