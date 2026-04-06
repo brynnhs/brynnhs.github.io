@@ -172,17 +172,17 @@ body::after {
 
 .neo-headline {
   font-family: var(--neo-sans);
-  font-size: clamp(1.5rem, 3.6vw, 2.4rem);
-  line-height: 1.2;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.1;
   margin: 0;
-  max-width: 24ch;
+  max-width: 16ch;
 }
 
 .neo-hero__subhead {
   color: var(--neo-muted);
-  font-size: 1.1rem;
-  line-height: 1.8;
-  max-width: 52ch;
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 48ch;
 }
 
 .neo-pill-row {
@@ -256,8 +256,8 @@ body::after {
 
 .neo-portrait {
   position: relative;
-  width: min(320px, 70vw);
-  max-width: 320px;
+  width: min(360px, 80vw);
+  max-width: 360px;
   margin-left: auto;
   align-self: center;
 }
@@ -275,7 +275,7 @@ body::after {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border-radius: 32px;
+  border-radius: 36px;
   border: 6px solid rgba(255, 255, 255, 0.9);
   box-shadow: var(--neo-shadow);
 }
