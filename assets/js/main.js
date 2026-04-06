@@ -29,6 +29,41 @@
   }
 
   // ==========================================================================
+  // Poster modal handling
+  // ==========================================================================
+  function initPosterModal() {
+    const trigger = document.querySelector('.poster-trigger');
+    const modal = document.getElementById('posterModal');
+    const backdrop = document.getElementById('posterModalBackdrop');
+    if (!trigger || !modal || !backdrop) return;
+
+    const closeButton = modal.querySelector('.poster-modal__close');
+    const modalImage = modal.querySelector('img');
+
+    function openModal() {
+      if (modalImage && trigger.dataset.poster) {
+        modalImage.src = trigger.dataset.poster;
+      }
+      modal.classList.add('is-visible');
+      backdrop.classList.add('is-visible');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+      modal.classList.remove('is-visible');
+      backdrop.classList.remove('is-visible');
+      document.body.style.overflow = '';
+    }
+
+    trigger.addEventListener('click', openModal);
+    backdrop.addEventListener('click', closeModal);
+    if (closeButton) closeButton.addEventListener('click', closeModal);
+    document.addEventListener('keyup', function(event) {
+      if (event.key === 'Escape') closeModal();
+    });
+  }
+
+  // ==========================================================================
   // Fade-in Animations on Scroll
   // ==========================================================================
   function initScrollAnimations() {
@@ -311,6 +346,7 @@
         initProjectFiltering();
         initMobileMenu();
         initExpandedProject();
+        initPosterModal();
       });
     } else {
       // DOM is already loaded
@@ -320,6 +356,7 @@
       initProjectFiltering();
       initMobileMenu();
       initExpandedProject();
+      initPosterModal();
     }
   }
 

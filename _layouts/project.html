@@ -50,34 +50,31 @@ layout: single
     {% endif %}
   </section>
 
+  {% assign poster_image = page.poster_image | default: page.image %}
   <div class="project-detail__grid">
     <section class="project-detail__body fade-in">
       {{ content }}
     </section>
-    <aside class="project-detail__summary fade-in">
-      {% if page.technologies %}
-      <div class="project-info-card">
-        <p class="project-info-card__label">Technologies</p>
-        <div class="project-info-card__tags">
-          {% for tech in page.technologies %}
-          <span class="tech-badge">{{ tech }}</span>
-          {% endfor %}
-        </div>
-      </div>
-      {% endif %}
-
-      {% if page.links %}
-      <div class="project-info-card project-info-card--links">
-        <p class="project-info-card__label">Links</p>
-        <ul>
-          {% for link in page.links %}
-          {% if link.url and link.url != '#' %}
-          <li><a href="{{ link.url }}" target="_blank" rel="noopener noreferrer">{{ link.label }}</a></li>
-          {% endif %}
-          {% endfor %}
-        </ul>
-      </div>
-      {% endif %}
+    {% if poster_image %}
+    <aside class="project-detail__poster fade-in">
+      <p class="project-info-card__label">Poster Snapshot</p>
+      <figure class="project-poster-card">
+        <button class="poster-trigger" type="button" data-poster="{{ poster_image | relative_url }}" aria-label="Expand poster">
+          <img src="{{ poster_image | relative_url }}" alt="{{ page.poster_caption | default: page.title }}">
+        </button>
+        {% if page.poster_caption %}
+        <figcaption>{{ page.poster_caption }}</figcaption>
+        {% endif %}
+      </figure>
     </aside>
+    {% endif %}
   </div>
 </article>
+
+{% if poster_image %}
+<div class="poster-modal" id="posterModal" aria-hidden="true">
+  <button class="poster-modal__close" type="button" aria-label="Close poster">&times;</button>
+  <img src="{{ poster_image | relative_url }}" alt="{{ page.poster_caption | default: page.title }}">
+</div>
+<div class="poster-modal__backdrop" id="posterModalBackdrop"></div>
+{% endif %}
