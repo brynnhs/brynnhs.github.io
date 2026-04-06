@@ -20,23 +20,17 @@ This project involves developing a comprehensive Dash application for visualizin
 
 ## Key Features
 
-- Interactive data visualization dashboards
-- Real-time data analysis capabilities
-- Comprehensive neural signal processing
-- Behavioral pattern recognition
-- Export functionality for research publications
-
-## Technologies Used
-
-- **Python**: Core development language
-- **Dash/Plotly**: Interactive web application framework
-- **Data Analysis Libraries**: Pandas, NumPy for data processing
-- **Visualization**: Custom Plotly charts and graphs
+Interactive dashboards make it easy to scrub through large photometry datasets, while real-time analytics surface behavioural correlations as the recordings stream in. The app bundles signal processing tools, behavioural event overlays, and automated report exports so researchers can move from raw data to publication-ready visuals without leaving the interface.
 
 ## Impact
 
-This tool has been used in ongoing research to better understand memory formation and retrieval processes in mouse models, contributing to advances in neurotechnology and cognitive research.
+<div class="project-impact">
+  <p>This toolkit is actively used in photometry studies to interrogate memory formation and retrieval in mouse models. By pairing neural signals with behavioural annotations in one place, it shortens the feedback loop for hypotheses and accelerates translational neurotechnology work.</p>
+</div>
 
 ## Poster Snapshot
 
-![BioFab Lab Poster]({{ '/assets/images/bfl_poster.jpg' | relative_url }})
+<figure class="project-poster-card">
+  <img src="{{ '/assets/images/bfl_poster.jpg' | relative_url }}" alt="Mouse Memory Analysis poster">
+  <figcaption>Overview poster displayed at BioFab Lab highlighting the end-to-end mouse memory analysis pipeline.</figcaption>
+</figure>
