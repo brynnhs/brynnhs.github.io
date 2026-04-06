@@ -1,11 +1,7 @@
 main:
-  - title: "Home"
-    url: /
-  - title: "About"
-    url: /#about
+  - title: "CV"
+    url: /cv/
   - title: "Projects"
     url: /#projects
   - title: "Contact"
     url: /#contact
-  # - title: "Posts"
-  #   url: /posts/
