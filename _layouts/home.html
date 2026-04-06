@@ -6,30 +6,13 @@ layout: archive
   <section class="neo-hero fade-in">
     <div class="neo-hero__grid">
       <div class="neo-hero__copy">
-        <p class="neo-label">Neurotechnology &amp; AI</p>
         <h1 class="neo-headline">I design neural interfaces and intelligent tools for health.</h1>
-        <p class="neo-hero__subhead">From EEG systems and functional ultrasound forecasting to VR neuromodulation and clinical AI, I translate research into inclusive, scalable products.</p>
-        {% assign hero_tags = "Neurotechnology,Deep Learning,Brain Interfaces,Digital Health" | split: ',' %}
-        <div class="neo-pill-row">
-          {% for tag in hero_tags %}
-          <span class="neo-pill">{{ tag | strip }}</span>
-          {% endfor %}
-        </div>
         <div class="neo-hero__cta">
           <a href="{{ '/cv/' | relative_url }}" class="neo-link">View CV</a>
           <a href="#projects" class="neo-link neo-link--ghost">See selected work</a>
         </div>
       </div>
       <div class="neo-hero__meta">
-        {% assign current_item = site.data.experience | where: "current", true | first %}
-        {% if current_item %}
-        <article class="neo-card">
-          <p class="neo-card__label">Currently</p>
-          <h3>{{ current_item.title }}</h3>
-          <p>{{ current_item.organization }}</p>
-          <span>{{ current_item.location }}</span>
-        </article>
-        {% endif %}
         <div class="neo-portrait">
           <div class="neo-portrait__glow"></div>
           <img src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }}">
