@@ -20,6 +20,8 @@ links:
 
 This project involves developing a comprehensive Dash application for visualizing and analyzing neural and behavioural data from mouse experiments. The application provides researchers with powerful tools to explore complex datasets and gain insights into memory-related neural patterns.
 
+<!--poster-->
+
 ## Key Features
 
 Interactive dashboards make it easy to scrub through large photometry datasets, while real-time analytics surface behavioural correlations as the recordings stream in. The app bundles signal processing tools, behavioural event overlays, and automated report exports so researchers can move from raw data to publication-ready visuals without leaving the interface.
