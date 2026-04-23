@@ -9,6 +9,10 @@ technologies:
   - Python
   - Pytorch
   - Signal processing
+links:
+- label: "GitHub"
+  icon: "fab fa-github"
+  url: "https://github.com/brynnhs/fUSPredict"
 ---
 
 ## Overview
