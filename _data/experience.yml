@@ -4,7 +4,7 @@
   location: "Paris, France"
   start_date: "Jan 2026"
   end_date: "Present"
-  description: "Developing deep learning models to predict future functional ultrasound frames from historical brain activity for real-time neural state forecasting."
+  description: "Developing deep learning models to predict future functional ultrasound frames from previous frames for real-time neural state forecasting."
   current: true
 
 - type: "Education"
