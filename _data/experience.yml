@@ -22,7 +22,7 @@
   location: "Paris, France"
   start_date: "Apr 2025"
   end_date: "Aug 2025"
-  description: "Built EEG acquisition and analysis pipelines for a VR-based gamma neuromodulation platform and designed closed-loop Unity experiments."
+  description: "Developed EEG acquisition and analysis pipelines for a VR-based gamma-frequency neuromodulation platform targeting Alzheimer's disease. Designed closed-loop experimental protocols in Unity (C#)."
   current: false
 
 - type: "Experience"
