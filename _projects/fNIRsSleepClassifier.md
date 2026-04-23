@@ -3,7 +3,7 @@ title: "fNIRs Sleep Classifier"
 date: 2026-03-24
 status: 'in progress'
 description: "A side project exploring fNIRS analysis using Meta’s new NeuroAI framework, building models to classify infant language background from brain activity during sleep"
-category: "Neuroimaging ML"
+category: "Neuroimaging Machine Learning"
 poster_image: "/assets/images/bfl_poster.jpg"
 poster_caption: "Overview poster displayed at BioFab Lab highlighting the end-to-end mouse memory analysis pipeline."
 technologies:
