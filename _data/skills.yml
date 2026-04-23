@@ -28,7 +28,7 @@
   items:
     - name: "Experimental Design"
       level: "Advanced"
-    - name: "EEG / fNIRS Workflows"
+    - name: "EEG / fUS / fNIRS"
       level: "Advanced"
     - name: "Clinical Data Management"
       level: "Advanced"
@@ -46,6 +46,4 @@
     - name: "R"
       level: "Intermediate"
     - name: "Git / GitHub"
-      level: "Intermediate"
-    - name: "Biomedical Imaging"
       level: "Intermediate"
