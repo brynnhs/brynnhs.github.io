@@ -2,7 +2,7 @@
 title: "fUSPredict"
 date: 2026-02-01
 status: 'in progress'
-image: "/assets/images/small.png"
+# image: "/assets/images/small.png"
 description: "My master’s thesis research project which uses deep learning to predict future functional ultrasound (fUS) activity from past imaging data."
 category: "Research"
 technologies:
