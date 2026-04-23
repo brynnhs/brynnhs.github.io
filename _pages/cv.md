@@ -10,7 +10,7 @@ author_profile: false
   <header class="cv-header">
     <div class="cv-header__copy">
       <h1>{{ site.author.name }}</h1>
-      <p>Applied Neuroscientist — Deep Learning &amp; Biosignal Processing</p>
+      <p>Applied Neuroscientist — ML/AI & Neurotech</p>
     </div>
     <div class="cv-header__contact">
       <a href="mailto:{{ site.email }}" class="cv-contact-pill" aria-label="Email {{ site.author.name }}">
