@@ -402,6 +402,10 @@ body::after {
   margin: 0.4rem 0 0.8rem;
 }
 
+.neo-contact > div > p:last-child {
+  margin-bottom: 0;
+}
+
 .neo-contact__actions {
   display: flex;
   flex-direction: column;
