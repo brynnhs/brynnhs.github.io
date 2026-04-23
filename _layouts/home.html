@@ -37,6 +37,7 @@ layout: archive
           <div>
             <div class="neo-project-card__meta">
               {% if project.category %}<span>{{ project.category }}</span>{% endif %}
+              {% if project.status %}<span class="neo-status-badge neo-status-badge--{{ project.status | downcase | replace: ' ', '-' }}">{{ project.status }}</span>{% endif %}
               {% if project.date %}<span>{{ project.date | date: "%Y" }}</span>{% endif %}
             </div>
             <h3><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h3>

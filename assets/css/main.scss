@@ -357,6 +357,22 @@ body::after {
   color: var(--neo-muted);
 }
 
+.neo-status-badge {
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  font-weight: 600;
+  background: rgba(181, 114, 246, 0.15);
+  color: var(--neo-accent);
+}
+
+.neo-status-badge--complete {
+  background: rgba(52, 199, 89, 0.15);
+  color: #2a9d4a;
+}
+
 .neo-project-card h3 {
   font-family: var(--neo-serif);
   font-size: 1.8rem;
