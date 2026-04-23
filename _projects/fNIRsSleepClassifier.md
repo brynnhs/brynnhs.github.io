@@ -18,7 +18,11 @@ links:
 
 ## Overview
 
-sleep-fNIRS-classifier is a machine learning project that uses functional near-infrared spectroscopy (fNIRS) data recorded from sleeping infants to classify their language background (Spanish monolingual, Basque monolingual, or bilingual). By analyzing functional connectivity patterns in resting-state hemodynamic signals, it aims to detect early differences in brain organization associated with language exposure. This can be used to test whether group-level neurodevelopmental effects of bilingualism are identifiable at the individual level.
+This project applies ML to fNIRS resting-state data recorded from 104 four-month-old infants during natural sleep (Blanco et al., 2022), with the goal of classifying infants by language background — Spanish monolingual, Basque monolingual, or bilingual — from their hemodynamic brain activity patterns.
+
+The scientific premise is that bilingual exposure leaves measurable traces in functional brain organization as early as 4 months. The question is whether those group-level differences are detectable at the individual level.
+
+The project starts with the preprocessed data from the original study, applying a functional connectivity → PCA → classifier pipeline. Next, UMAP will be used to test whether language group structure emerges without labels. Finally, the plan is to return to the raw fNIRS data and implement preprocessing from scratch using Meta's NeuroAI framework for standardized neural data workflows.
 
 ## Results
 

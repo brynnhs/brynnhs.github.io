@@ -17,7 +17,8 @@ links:
 
 ## Overview
 
-fUSPredict is a deep learning project with the goal of predicting future functional ultrasound (fUS) imaging frames from sequences of past frames. By modeling the spatiotemporal dynamics of cerebral blood flow, it aims to capture how brain activity evolves over time. This can be used to establish stronger predictive baselines and improve the performance of real-time brain–computer interfaces (BCIs).
+fUS imaging captures cerebral blood flow dynamics at high spatiotemporal resolution, producing rich sequences of brain activity over time. This project frames future frame prediction as a spatiotemporal sequence modeling problem — given N past fUS frames, predict what comes next.
+The work started with a persistence baseline (predicting the next frame as identical to the current one) to characterize the temporal autocorrelation structure of fUS data and establish a meaningful lower bound for model evaluation. The next stage is autoregressive modeling, working toward architectures that can capture both local spatial patterns and longer-range temporal dependencies in cerebral blood flow. The final stage is to move onto deeper models, starting with ConvLSTM and progressing to autoencoders and pretrained backbones. 
 
 <!-- ## Features
 
