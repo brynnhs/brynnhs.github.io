@@ -2,7 +2,7 @@
 title: "Mouse Memory Analysis"
 date: 2025-03-24
 description: "A Dash application for visualizing and analyzing neural and behavioural data from mouse experiments."
-category: "Data Science"
+category: "Neural Data Analysis Tool"
 poster_image: "/assets/images/bfl_poster.jpg"
 poster_caption: "Overview poster displayed at BioFab Lab highlighting the end-to-end mouse memory analysis pipeline."
 technologies:
