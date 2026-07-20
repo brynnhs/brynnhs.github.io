@@ -4,16 +4,16 @@
   location: "Paris, France"
   start_date: "Jan 2026"
   end_date: "Present"
-  description: "Developing deep learning models to predict future functional ultrasound frames from previous frames for real-time neural state forecasting."
+  description: "Full-time. Built PyTorch-based deep learning models (ConvLSTM, autoencoders) to predict future ultrasound frames from past neural activity, benchmarked against classical baselines on 29 macaque sessions. Designed evaluation framework using Wilcoxon signed-rank tests and bootstrap CIs to characterize predictability limits and inform real-time BCI applications."
   current: true
 
 - type: "Education"
-  title: "Master's in Biomedical Engineering"
+  title: "Masters in Biomedical Engineering"
   organization: "ESPCI - PSL University"
   location: "Paris, France"
   start_date: "Sept 2024"
-  end_date: "Present"
-  description: "AI & Digital Health"
+  end_date: "June 2026"
+  description: "AI & Digital Health. Relevant courses: ML & AI, Electronic Health Records & Medical Informatics, Bioinformatics, Biomedical Image Analysis, Statistics."
   current: true
 
 - type: "Experience"
@@ -22,40 +22,40 @@
   location: "Paris, France"
   start_date: "Apr 2025"
   end_date: "Aug 2025"
-  description: "Developed EEG acquisition and analysis pipelines for a VR-based gamma-frequency neuromodulation platform targeting Alzheimer's disease. Designed closed-loop experimental protocols in Unity (C#)."
+  description: "Full-time. Developed EEG acquisition and analysis pipelines for a VR-based gamma-frequency neuromodulation platform targeting Alzheimer's disease. Designed experimental protocols in Unity (C#) & managed data collection."
   current: false
 
 - type: "Experience"
   title: "Research Assistant"
-  organization: "Neuro-Cognitive Imaging Lab"
-  location: "Halifax, Nova Scotia"
+  organization: "NeuroCognitive Imaging Lab"
+  location: "Halifax, NS"
   start_date: "Sept 2021"
   end_date: "Aug 2024"
-  description: "Completed an honours thesis on non-invasive BCI optimization and contributed to EEG preprocessing, classification, and statistical analysis pipelines."
+  description: "Part-time. Bachelor thesis on optimizing stimuli for non-invasive brain computer interfaces (BCI). Contributed to Python-based EEG preprocessing pipeline including filtering, artifact removal, and epoch extraction. Collaborated on Scikit-learn ML classification pipeline for offline BCI, statistically validating results using R."
   current: false
 
 - type: "Experience"
   title: "Junior Data Scientist & Clinical Ops Manager"
   organization: "Axem Neurotech"
-  location: "Halifax, Nova Scotia"
+  location: "Halifax, NS"
   start_date: "Nov 2023"
   end_date: "Feb 2024"
-  description: "Designed a Unity-based computer vision rehabilitation system and managed fNIRS protocols and clinical data collection."
+  description: "Full-time (company dissolved). Designed computer vision-based gesture recognition system in Unity/C# to gamify stroke rehabilitation exercises for clinical trial participants. Managed fNIRS experimental protocols and clinical data collection."
   current: false
 
 - type: "Experience"
-  title: "BCI Specialist"
+  title: "Brain Computer Interface Specialist"
   organization: "SURGE Innovation Sandbox"
-  location: "Halifax, Nova Scotia"
+  location: "Halifax, NS"
   start_date: "Oct 2023"
   end_date: "Aug 2024"
-  description: "Led weekly EEG and machine learning workshops and built a hands-on brain-computer interface curriculum."
+  description: "Part-time. Led weekly EEG and ML workshops for undergraduate students, developing hands-on brain-computer interface project curriculum from scratch."
   current: false
 
 - type: "Education"
   title: "BSc with First Class Honours"
   organization: "Dalhousie University"
-  location: "Halifax, Nova Scotia"
+  location: "Halifax, NS"
   start_date: "Sept 2019"
   end_date: "June 2023"
   description: "Neuroscience"
