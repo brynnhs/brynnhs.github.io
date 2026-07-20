@@ -2,6 +2,7 @@
 title: "fNIRS Sleep Classifier"
 date: 2026-03-24
 status: 'in progress'
+published: false
 description: "A side project exploring fNIRS analysis using Meta’s new NeuroAI framework, building models to classify infant language background from brain activity during sleep"
 category: "Machine Learning"
 poster_image: "/assets/images/bfl_poster.jpg"
