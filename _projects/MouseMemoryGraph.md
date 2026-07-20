@@ -29,5 +29,5 @@ Interactive dashboards make it easy to scrub through large photometry datasets, 
 ## Impact
 
 <div class="project-impact">
-  <p>This toolkit is actively used in photometry studies to interrogate memory formation and retrieval in mouse models. By pairing neural signals with behavioural annotations in one place, it shortens the feedback loop for hypotheses and accelerates translational neurotechnology work.</p>
+  <p>This toolkit is actively used in photometry studies to interrogate memory formation and retrieval in mouse models. By pairing neural signals with behavioural annotations in one place, it shortens the feedback loop for hypotheses and accelerates translational neuroscience research.</p>
 </div>
